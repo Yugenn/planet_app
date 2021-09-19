@@ -23,5 +23,5 @@ class PlanetSeeder extends Seeder
             'updated_at' => date('Y-m-d H:i:s'),
         ]);
             
-    
-        }
+    }
+}
