@@ -24,4 +24,4 @@ class PlanetSeeder extends Seeder
         ]);
             
     }
-}
+} 
