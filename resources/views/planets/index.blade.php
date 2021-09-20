@@ -13,5 +13,7 @@
             <!-- // リンク先をidで取得し名前で出力 -->
             <li><a href="/planets/{{ $planet->id }}">{{ $planet->name }}</a></li>
         @endforeach</ul>
+        <!-- 新規登録画面へジャンプする -->
+    <a href="/planets/create">登録する</a>
 </body>
 </html>
