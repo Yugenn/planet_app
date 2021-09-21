@@ -23,7 +23,7 @@
         </div>
     @endif
     <h1>惑星情報登録</h1>
-    <form action="/planets" method="post">
+    <form action="/planets/" method="post">
         @csrf
         <p>
             <label for="name">名前</label>

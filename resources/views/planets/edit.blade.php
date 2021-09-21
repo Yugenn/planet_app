@@ -26,8 +26,8 @@
     <form action="/planets/{{ $planet->id }}" method="post">
         @csrf
         @method('PATCH')
-        <input type="hidden" name="id" value="{{ $planet->id }}">
-        <p>
+        
+        <p> 
             <label for="name">名前</label>
             <input type="text" name="name" value="{{ old('name', $planet->name) }}">
         </p>
