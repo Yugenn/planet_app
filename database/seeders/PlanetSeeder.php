@@ -14,12 +14,35 @@ class PlanetSeeder extends Seeder
      */
     public function run()
     {
-        DB::table('items')->insert([
-            'name'=>'水星',
-            'en_name'=>'MERCURY',
-            'radius'=>'2439',
-            'weight'=>'3310',
+        // 一件だけinsertする
+        DB::table('planets')->insert([
+            'name' => '水星',
+            'en_name' => 'MERCURY',
+            'radius' => 2439,
+            'weight' => 3310,
+            'created_at' => date('Y-m-d H:i:s'),
+            'updated_at' => date('Y-m-d H:i:s'),
         ]);
-            
+        # paramに配列を代入
+        $param = [
+            [
+                'name' => '金星',
+                'en_name' => 'VENUS',
+                'radius' => 6052,
+                'weight' => 48700,
+                'created_at' => date('Y-m-d H:i:s'),
+                'updated_at' => date('Y-m-d H:i:s'),
+            ],
+            [
+                'name' => '地球',
+                'en_name' => 'EARTH',
+                'radius' => 6378,
+                'weight' => 59760,
+                'created_at' => date('Y-m-d H:i:s'),
+                'updated_at' => date('Y-m-d H:i:s'),
+            ]
+        ];
+        # DB::table->insertでレコードの登録
+        DB::table('planets')->insert($param);
     }
 } 
