@@ -24,15 +24,7 @@
     </p>
 
     <a href="/planets">戻る</a>
-    {{-- <div class="button-group">
-        <!-- 商品のidを元に編集ページへ遷移する -->
-        <button onclick="location.href='/planets/{{ $planet->id }}/edit'">編集する</button>
-        <form action="/planets/{{ $planet->id }}" method="post">
-            @csrf
-            @method('DELETE')
-            <input type="submit" value="削除する" onclick="if(!confirm('削除しますか？')){return false};">
-        </form>
-    </div> --}}
+
 </body>
 
 </html>
